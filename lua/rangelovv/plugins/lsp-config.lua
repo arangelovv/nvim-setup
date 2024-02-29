@@ -8,6 +8,7 @@ require("mason-lspconfig").setup {
 local lspconfig = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+lspconfig.angularls.setup {capabilities = capabilities}
 lspconfig.lua_ls.setup {capabilities = capabilities}
 lspconfig.cssls.setup {capabilities = capabilities}
 lspconfig.cssmodules_ls.setup {capabilities = capabilities}

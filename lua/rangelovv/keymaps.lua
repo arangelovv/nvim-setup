@@ -15,7 +15,7 @@ vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', {noremap = true, silent = tr
 
 --Telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {}) --for finding 
 
 --LSP
 vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, {})
